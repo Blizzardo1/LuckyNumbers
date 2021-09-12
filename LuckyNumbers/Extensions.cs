@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -25,5 +26,7 @@ namespace LuckyNumbers
         {
             return (T)Convert.ChangeType(c.Text, typeof(T));
         }
+
+        public static Brush Inverse(this Brush brush) => new SolidBrush(Color.FromArgb(((SolidBrush)brush).Color.ToArgb() ^ 0xFFFFFF));
     }
 }

@@ -42,7 +42,7 @@ namespace LuckyNumbers
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LuckyNumber";
-            this.Text = "LuckyNumber";
+            this.Text = "Your lucky number is...";
             this.ResumeLayout(false);
 
         }
